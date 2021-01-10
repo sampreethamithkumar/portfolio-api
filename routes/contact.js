@@ -4,10 +4,12 @@ const { validate } = require("../model/contact");
 const nodemailer = require("nodemailer");
 
 router.get("/", (req, res) => {
-  res.header({ "Access-Control-Allow-Origin": "*" }).send("Hello world");
+  res.send("Hello world");
 });
 
 router.post("/", (req, res) => {
+  // res.header({ "Access-Control-Allow-Origin": "*" });
+
   const { error } = validate(req.body);
   console.log(error);
   if (error) return res.send(error.details[0].message);
