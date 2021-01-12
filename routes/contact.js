@@ -33,8 +33,9 @@ router.post("/", (req, res) => {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "sampreethamith65@gmail.com", // generated ethereal user
-      pass: "hzpoahpdcqcqrcfn", // generated ethereal password
+      user: "nodemailersampreeth@gmail.com", // generated ethereal user
+      pass: "kycrgfkxjgbkhxzq", // generated ethereal password
+      // hzpoahpdcqcqrcfn
     },
     tls: {
       rejectUnauthorized: false,
@@ -43,7 +44,7 @@ router.post("/", (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: '"Nodemailer Contact" sampreethamith65@gmail.com', // sender address
+    from: '"Nodemailer Contact" nodemailersampreeth@gmail.com', // sender address
     to: "sampreethamithkumar@gmail.com", // list of receivers
     subject: "Node Contact Request", // Subject line
     text: "Hello world?", // plain text body
